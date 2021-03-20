@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    background-color: silver;
+
+}
+legend{
+    text-align: center;
+    color:white;
+}
+
+fieldset{
+    background-color: ivory;
+    color:green;
+    margin: 20px;
+    height: 600px;
+    text-align: center;
+
+    /* overflow: auto; */
+}
+
+.man{
+    max-width: 500px;
+    margin: auto;
+    
+}
+p{
+    text-align: center;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+input{
+    border-bottom:1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    width: 450px;
+    height: 30px;
+}
+
+input:focus{
+    border-bottom:1px solid blue;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#it{
+    color: gray;
+}
