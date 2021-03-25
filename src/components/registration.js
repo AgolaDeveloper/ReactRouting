@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './registration.css'
+import axios from 'axios'
 
 class Registration extends Component{
     constructor(props){
@@ -21,13 +22,18 @@ class Registration extends Component{
             this.setState({ [nam]: val })
         }
 
-        submit= ()=>{
-            alert("you're about to submit your information"+this.state.age);
-        }
+        // submit= ()=>{
+        //     const user={this.setState({ [nam]: val  })}
+        // }
+
+        // submit= ()=>{
+        //     alert("you're about to submit your information"+this.state.age);
+        // }
 
         render(){
             return(
                 <div className="man">
+                    <form onSubmit={this.submit}>
                     <fieldset>
                         <h3 id="it">REGISTER WITH GHETTO CHESS, Kisumu</h3>
                         <legend>Personal Info.</legend>
@@ -71,6 +77,8 @@ class Registration extends Component{
 </fieldset>
 
                         <button type='submit' name='submit' onClick={this.submit}>SUBMIT</button>
+                        </form>
+
                         <p> Already have account?| <a href="">login</a></p>
 
                         <br />

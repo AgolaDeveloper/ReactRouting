@@ -7,6 +7,7 @@ import Registration from './components/registration'
 import Partner from './components/partners'
 import Sponsor from './components/sponsors'
 import Home from './components/home'
+import List from './components/list'
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
         <li><NavLink to="/partner.js" activeClassName="navs">Partners</NavLink></li>
         <li><NavLink to="/sponsors.js" activeClassName="navs">Sponsors</NavLink></li>
         <li><NavLink to="/registration.js" activeClassName="navs">Registration</NavLink></li>
+        <li><NavLink to="/list.js" activeClassName="navs">Our Employees</NavLink></li>
+
       </ul>
       
     <Switch>
@@ -26,7 +29,9 @@ function App() {
       <Route path="/about.js" component={About}></Route>
       <Route path="/partner.js" component={Partner}></Route>
       <Route path="/sponsors.js" component={Sponsor}></Route>
-      <Route path="/registration.js" component={Registration}></Route>     
+      <Route path="/registration.js" component={Registration}></Route> 
+      <Route path="/list.js" component={List}></Route>
+    
     </Switch>
     </div>
     </div>
