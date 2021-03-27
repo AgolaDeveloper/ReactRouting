@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './registration.css'
-import axios from 'axios'
+// import axios from 'axios'
+import 'bootstrap/dist/css/bootstrap.css'
+
 
 class Registration extends Component{
     constructor(props){
@@ -32,6 +34,7 @@ class Registration extends Component{
 
         render(){
             return(
+                
                 <div className="man">
                     <form onSubmit={this.submit}>
                     <fieldset>
